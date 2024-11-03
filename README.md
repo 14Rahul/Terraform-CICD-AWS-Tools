@@ -34,10 +34,10 @@ AWS CodeBuild will compile, test, and deploy your Terraform code as part of the 
 To automate deployments on every commit, we’ll configure a CodePipeline that triggers the CI/CD workflow.
 
 1. **Deploy CodePipeline Configuration**: Use the `codepipeline.tf` file to set up CodePipeline.
-2. **Configure Pipeline Stages**:
+2. **This Terraform Will Configure Pipeline Stages**:
    - **Stage 1 (Source)**: Pulls the latest code from CodeCommit.
    - **Stage 2 (Deploy)**: Deploys using CodeBuild.
-3. **Set Up EventBridge**: Create an EventBridge rule to trigger the pipeline on every new commit to the `master` branch.
+3. **This Terraform Will Also Set Up EventBridge**: Create an EventBridge rule to trigger the pipeline on every new commit to the `master` branch.
 4. **Verify Pipeline**: Ensure the pipeline is operating correctly, triggering on commits and deploying changes.
 
 This CI/CD setup enables an efficient and automated way to manage and deploy your Terraform infrastructure as code.
